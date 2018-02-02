@@ -1257,9 +1257,6 @@ pre .javascript .function {
 .use-motion .comments {
   opacity: 0;
 }
-.use-motion .post-header {
-  opacity: 0;
-}
 .use-motion .post-body {
   opacity: 0;
 }
@@ -1822,7 +1819,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #1affa2;
+  background: #ba490f;
 }
 .links-of-blogroll {
   font-size: 13px;
