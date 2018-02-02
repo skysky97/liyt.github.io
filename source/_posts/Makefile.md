@@ -31,7 +31,7 @@ MSG="AFTER"
 变量`MSG2`的值为"AFTER"。  
   
 `:=`会取决于变量在makefile中的位置，而不是makefile展开后的值。
-```
+```makefile
 MSG="BEFORE"  
 MSG2:=$(MSG)  
 MSG="AFTER"  
