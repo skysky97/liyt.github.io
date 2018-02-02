@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="makefile," />
 
 
 
@@ -79,13 +79,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Program Life">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="Makefile执行顺序make的执行顺序不同于shell script的从上到下，而是先读取所有makefile建立依赖关系，然后根据依赖关系重建目标。比如123456MSG=&quot;HELLO WORLD&quot;all:    @echo $(MSG)MSG=&quot;AFTER ALL&quot; 执行make的结果为1AFTER ALL 因为在执行构建all前，变量MSG已经是”AFTER ALL”。   赋值=会将整">
+<meta name="keywords" content="makefile">
+<meta property="og:type" content="article">
+<meta property="og:title" content="学习笔记：Makefile">
+<meta property="og:url" content="http://yoursite.com/2018/02/02/Makefile/index.html">
 <meta property="og:site_name" content="Program Life">
+<meta property="og:description" content="Makefile执行顺序make的执行顺序不同于shell script的从上到下，而是先读取所有makefile建立依赖关系，然后根据依赖关系重建目标。比如123456MSG=&quot;HELLO WORLD&quot;all:    @echo $(MSG)MSG=&quot;AFTER ALL&quot; 执行make的结果为1AFTER ALL 因为在执行构建all前，变量MSG已经是”AFTER ALL”。   赋值=会将整">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-02-02T03:25:37.382Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Program Life">
+<meta name="twitter:title" content="学习笔记：Makefile">
+<meta name="twitter:description" content="Makefile执行顺序make的执行顺序不同于shell script的从上到下，而是先读取所有makefile建立依赖关系，然后根据依赖关系重建目标。比如123456MSG=&quot;HELLO WORLD&quot;all:    @echo $(MSG)MSG=&quot;AFTER ALL&quot; 执行make的结果为1AFTER ALL 因为在执行构建all前，变量MSG已经是”AFTER ALL”。   赋值=会将整">
 
 
 
@@ -115,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/02/02/Makefile/"/>
 
 
 
 
 
-  <title>Program Life</title>
+  <title>学习笔记：Makefile | Program Life</title>
   
 
 
@@ -140,8 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -234,9 +238,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -266,9 +270,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/02/Makefile/" itemprop="url">学习笔记：Makefile</a></h1>
+          <h1 class="post-title" itemprop="name headline">学习笔记：Makefile</h1>
         
 
         <div class="post-meta">
@@ -340,9 +342,7 @@
       
 
       
-        
-          
-            <h1 id="Makefile"><a href="#Makefile" class="headerlink" title="Makefile"></a>Makefile</h1><h2 id="执行顺序"><a href="#执行顺序" class="headerlink" title="执行顺序"></a>执行顺序</h2><p>make的执行顺序不同于shell script的从上到下，而是先读取所有makefile建立依赖关系，然后根据依赖关系重建目标。比如<br><figure class="highlight makefile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">MSG=<span class="string">"HELLO WORLD"</span></span><br><span class="line"></span><br><span class="line"><span class="section">all:</span></span><br><span class="line">    @echo <span class="variable">$(MSG)</span></span><br><span class="line"></span><br><span class="line">MSG=<span class="string">"AFTER ALL"</span></span><br></pre></td></tr></table></figure></p>
+        <h1 id="Makefile"><a href="#Makefile" class="headerlink" title="Makefile"></a>Makefile</h1><h2 id="执行顺序"><a href="#执行顺序" class="headerlink" title="执行顺序"></a>执行顺序</h2><p>make的执行顺序不同于shell script的从上到下，而是先读取所有makefile建立依赖关系，然后根据依赖关系重建目标。比如<br><figure class="highlight makefile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">MSG=<span class="string">"HELLO WORLD"</span></span><br><span class="line"></span><br><span class="line"><span class="section">all:</span></span><br><span class="line">    @echo <span class="variable">$(MSG)</span></span><br><span class="line"></span><br><span class="line">MSG=<span class="string">"AFTER ALL"</span></span><br></pre></td></tr></table></figure></p>
 <p>执行make的结果为<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">AFTER ALL</span><br></pre></td></tr></table></figure></p>
 <p>因为在执行构建<code>all</code>前，变量<code>MSG</code>已经是”AFTER ALL”。  </p>
 <h2 id="赋值"><a href="#赋值" class="headerlink" title="赋值"></a>赋值</h2><p><code>=</code>会将整个makefile展开后再决定变量的值。比如<br><figure class="highlight makefile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">MSG=<span class="string">"BEFORE"</span>  </span><br><span class="line">MSG2=<span class="variable">$(MSG)</span>  </span><br><span class="line">MSG=<span class="string">"AFTER"</span></span><br></pre></td></tr></table></figure></p>
@@ -353,8 +353,6 @@
 <h2 id="编译目标文件到指定目录"><a href="#编译目标文件到指定目录" class="headerlink" title="编译目标文件到指定目录"></a>编译目标文件到指定目录</h2><figure class="highlight makefile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ifeq</span> (<span class="variable">$(OUT_DIR)</span>,)</span><br><span class="line">OUT_DIR = .</span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line">SRCS=<span class="variable">$(<span class="built_in">wildcard</span> *.c)</span></span><br><span class="line">OBJS=<span class="variable">$(<span class="built_in">patsubst</span> %.c,<span class="variable">$(OUT_DIR)</span>/%.o,<span class="variable">$(SRCS)</span>)</span></span><br><span class="line">CFLAGS=-Wall</span><br><span class="line"></span><br><span class="line"><span class="section">all: <span class="variable">$(OBJS)</span></span></span><br><span class="line">    @echo <span class="string">"  LINK    <span class="variable">$@</span>"</span></span><br><span class="line">    @cc -o <span class="variable">$(OUT_DIR)</span>/<span class="variable">$@</span> <span class="variable">$^</span> <span class="variable">$(CFLAGS)</span> </span><br><span class="line"></span><br><span class="line"><span class="variable">$(OUT_DIR)</span>/%.o: %.c </span><br><span class="line">    @mkdir -p <span class="variable">$(OUT_DIR)</span></span><br><span class="line">    @echo <span class="string">"  CC      <span class="variable">$@</span>"</span></span><br><span class="line">    @cc -c <span class="variable">$&lt;</span> -o <span class="variable">$@</span></span><br></pre></td></tr></table></figure>
 <p><code>OUT_DIR</code>为目标文件目录，默认为当前目录。<br><code>SRCS</code>为当前目录下所有源文件。<br><code>OBJS</code>为所有源文件对应的目标文件，文件名从替换源文件的<code>.c</code>为<code>.o</code>得到。这里用到了<code>patsubst</code>函数，把<code>$(SRCS)</code>中的<code>%.c</code>替换成<code>$(OUT_DIR)/%.o</code>。<br><code>cc -c $&lt; -o $@</code>通过<code>-o</code>选项指定object文件的路径。  </p>
 
-          
-        
       
     </div>
     
@@ -369,14 +367,20 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/makefile/" rel="tag"># makefile</a>
+          
+        </div>
+      
+
+      
+      
+      
 
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -386,10 +390,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -397,6 +402,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -417,8 +426,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -478,6 +496,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Makefile"><span class="nav-number">1.</span> <span class="nav-text">Makefile</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#执行顺序"><span class="nav-number">1.1.</span> <span class="nav-text">执行顺序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#赋值"><span class="nav-number">1.2.</span> <span class="nav-text">赋值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特殊符号"><span class="nav-number">1.3.</span> <span class="nav-text">特殊符号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#编译目标文件到指定目录"><span class="nav-number">1.4.</span> <span class="nav-text">编译目标文件到指定目录</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -611,6 +645,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
