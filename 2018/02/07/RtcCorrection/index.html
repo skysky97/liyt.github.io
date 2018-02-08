@@ -73,7 +73,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="RTC,RH850," />
 
 
 
@@ -84,13 +84,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="学园">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="RTC时钟校准RH850内部RTCA模块使用32.768KHz的subClock作为时钟源。时钟源的偏差将导致计时出现偏差，所以需要检测时钟源的实际频率，然后做出相应的补偿，以达到计时精度要求。   时钟测量配置Clock模块可以直接从JP0_3(CSCXFOUT)引脚输出时钟，要输出的时钟类型通过CKSC_AFOUTS_CTL寄存器选择SubSoc，然后通过SYSFOUTDIV使能输出和设置输出">
+<meta name="keywords" content="RTC,RH850">
+<meta property="og:type" content="article">
+<meta property="og:title" content="RH850内部RTC校准">
+<meta property="og:url" content="http://yoursite.com/2018/02/07/RtcCorrection/index.html">
 <meta property="og:site_name" content="学园">
+<meta property="og:description" content="RTC时钟校准RH850内部RTCA模块使用32.768KHz的subClock作为时钟源。时钟源的偏差将导致计时出现偏差，所以需要检测时钟源的实际频率，然后做出相应的补偿，以达到计时精度要求。   时钟测量配置Clock模块可以直接从JP0_3(CSCXFOUT)引脚输出时钟，要输出的时钟类型通过CKSC_AFOUTS_CTL寄存器选择SubSoc，然后通过SYSFOUTDIV使能输出和设置输出">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-02-08T09:42:47.245Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="学园">
+<meta name="twitter:title" content="RH850内部RTC校准">
+<meta name="twitter:description" content="RTC时钟校准RH850内部RTCA模块使用32.768KHz的subClock作为时钟源。时钟源的偏差将导致计时出现偏差，所以需要检测时钟源的实际频率，然后做出相应的补偿，以达到计时精度要求。   时钟测量配置Clock模块可以直接从JP0_3(CSCXFOUT)引脚输出时钟，要输出的时钟类型通过CKSC_AFOUTS_CTL寄存器选择SubSoc，然后通过SYSFOUTDIV使能输出和设置输出">
 
 
 
@@ -120,13 +125,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/02/07/RtcCorrection/"/>
 
 
 
 
 
-  <title>学园 - 人生苦短，我要编程。</title>
+  <title>RH850内部RTC校准 | 学园</title>
   
 
 
@@ -145,8 +150,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -239,9 +243,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -271,9 +275,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/07/RtcCorrection/" itemprop="url">RH850内部RTC校准</a></h1>
+          <h1 class="post-title" itemprop="name headline">RH850内部RTC校准</h1>
         
 
         <div class="post-meta">
@@ -357,9 +359,7 @@
       
 
       
-        
-          
-            <h1 id="RTC时钟校准"><a href="#RTC时钟校准" class="headerlink" title="RTC时钟校准"></a>RTC时钟校准</h1><p>RH850内部RTCA模块使用32.768KHz的subClock作为时钟源。时钟源的偏差将导致计时出现偏差，所以需要检测时钟源的实际频率，然后做出相应的补偿，以达到计时精度要求。  </p>
+        <h1 id="RTC时钟校准"><a href="#RTC时钟校准" class="headerlink" title="RTC时钟校准"></a>RTC时钟校准</h1><p>RH850内部RTCA模块使用32.768KHz的subClock作为时钟源。时钟源的偏差将导致计时出现偏差，所以需要检测时钟源的实际频率，然后做出相应的补偿，以达到计时精度要求。  </p>
 <h2 id="时钟测量"><a href="#时钟测量" class="headerlink" title="时钟测量"></a>时钟测量</h2><p>配置Clock模块可以直接从<code>JP0_3(CSCXFOUT)</code>引脚输出时钟，要输出的时钟类型通过<code>CKSC_AFOUTS_CTL</code>寄存器选择<code>SubSoc</code>，然后通过<code>SYSFOUTDIV</code>使能输出和设置输出的分频比。通过频率计直接测量输出的频率。  </p>
 <h2 id="RTC配置"><a href="#RTC配置" class="headerlink" title="RTC配置"></a>RTC配置</h2><h3 id="工作模式"><a href="#工作模式" class="headerlink" title="工作模式"></a>工作模式</h3><p>RTC模块有两种工作模式：  </p>
 <ul>
@@ -418,8 +418,6 @@
 <li>退出RTC校准模式。</li>
 </ol>
 
-          
-        
       
     </div>
     
@@ -434,338 +432,38 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/02/TreeListView/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="liyt">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="学园">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/02/TreeListView/" itemprop="url">WPF中TreeListView控件的实现</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-02T17:08:32+08:00">
-                2018-02-02
-              </time>
-            
-
-            
-              <span class="post-meta-divider">|</span>
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于&#58;</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2018-02-05T16:01:18+08:00">
-                2018-02-05
-              </time>
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/C/" itemprop="url" rel="index">
-                    <span itemprop="name">C#</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/RTC/" rel="tag"># RTC</a>
           
-
+            <a href="/tags/RH850/" rel="tag"># RH850</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h1><p>WPF中没有原生的TreeListView控件，本文根据MSN上的<a href="http://files.cnblogs.com/browser-yy/TreeListView.zip" target="_blank" rel="noopener">示例代码</a>来分析其实现方法。最终实现的效果图如下：<br><img src="http://liyunting-blog.oss-cn-hangzhou.aliyuncs.com/TreeListView/overview.png?Expires=1517821154&amp;OSSAccessKeyId=TMP.AQF68TJC4Ide1tJPA3AcCyX2OB4Wl804BxRGOMmj7ncAkWG3yTOzjh1rlXCKAAAwLAIUWEKetKGPUQK53jKSnv-LazIbzq0CFCCiK9ojTAVaqu-TgRf5ZPnpk3RY&amp;Signature=84DTld5suSKIPvw1fCxWIcBj6S4%3D" alt="overview"></p>
-<h1 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h1><p>整个TreeListView主要包括以下几个部分：</p>
-<ul>
-<li>折叠按钮，根据折叠展开状态变换显示效果，没有展开内容时隐藏。</li>
-<li>每个单元格。</li>
-<li>整个控件。</li>
-</ul>
-<h2 id="折叠按钮"><a href="#折叠按钮" class="headerlink" title="折叠按钮"></a>折叠按钮</h2><p>折叠按钮使用ToggleButton控件来实现，这里通过ControlTemplate设置ToggleButton的模板。<br>首先创建外层的Border确定折叠按钮的边界，然后创建内层Border绘制折叠展开符号，示例中折叠状态下显示为方框中间一个＋号。<br>将Button的<code>IsChecked</code>属性当作触发器，来改变内层Border的背景，实现折叠展开翻转效果。<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Style</span> <span class="attr">x:Key</span>=<span class="string">"ExpandCollapseToggleStyle"</span></span></span><br><span class="line"><span class="tag">       <span class="attr">TargetType</span>=<span class="string">"&#123;x:Type ToggleButton&#125;"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;<span class="name">Setter</span> <span class="attr">Property</span>=<span class="string">"Focusable"</span></span></span></span><br><span class="line"><span class="undefined">          Value="False"/&gt;</span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;<span class="name">Setter</span> <span class="attr">Property</span>=<span class="string">"Width"</span></span></span></span><br><span class="line"><span class="undefined">          Value="19"/&gt;</span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;<span class="name">Setter</span> <span class="attr">Property</span>=<span class="string">"Height"</span></span></span></span><br><span class="line"><span class="undefined">          Value="13"/&gt;</span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;<span class="name">Setter</span> <span class="attr">Property</span>=<span class="string">"Template"</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">Setter.Value</span>&gt;</span></span></span><br><span class="line"><span class="xml">      <span class="tag">&lt;<span class="name">ControlTemplate</span> <span class="attr">TargetType</span>=<span class="string">"&#123;x:Type ToggleButton&#125;"</span>&gt;</span> <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Width</span>=<span class="string">"19"</span></span></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">                Height="13"</span></span><br><span class="line"><span class="undefined">                Background="Transparent"&gt;</span></span><br><span class="line"><span class="xml">          <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Width</span>=<span class="string">"9"</span></span></span></span><br><span class="line"><span class="undefined">                  Height="9"</span></span><br><span class="line"><span class="undefined">                  BorderThickness="1"</span></span><br><span class="line"><span class="undefined">                  BorderBrush="#FF7898B5"</span></span><br><span class="line"><span class="undefined">                  CornerRadius="1"</span></span><br><span class="line"><span class="undefined">                  SnapsToDevicePixels="true"&gt;</span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;<span class="name">Border.Background</span>&gt;</span></span></span><br><span class="line"><span class="xml">              <span class="tag">&lt;<span class="name">LinearGradientBrush</span> <span class="attr">StartPoint</span>=<span class="string">"0,0"</span></span></span></span><br><span class="line"><span class="undefined">                                   EndPoint="1,1"&gt;</span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">LinearGradientBrush.GradientStops</span>&gt;</span></span></span><br><span class="line"><span class="xml">                  <span class="tag">&lt;<span class="name">GradientStop</span> <span class="attr">Color</span>=<span class="string">"White"</span></span></span></span><br><span class="line"><span class="undefined">                                Offset=".2"/&gt;</span></span><br><span class="line"><span class="xml">                  <span class="tag">&lt;<span class="name">GradientStop</span> <span class="attr">Color</span>=<span class="string">"#FFC0B7A6"</span></span></span></span><br><span class="line"><span class="undefined">                                Offset="1"/&gt;</span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;/<span class="name">LinearGradientBrush.GradientStops</span>&gt;</span></span></span><br><span class="line"><span class="xml">              <span class="tag">&lt;/<span class="name">LinearGradientBrush</span>&gt;</span></span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;/<span class="name">Border.Background</span>&gt;</span></span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;<span class="name">Path</span> <span class="attr">x:Name</span>=<span class="string">"ExpandPath"</span></span></span></span><br><span class="line"><span class="undefined">                  Margin="1,1,1,1"</span></span><br><span class="line"><span class="undefined">                  Fill="Black"</span></span><br><span class="line"><span class="undefined">                  Data="M 0 2 L 0 3 L 2 3 L 2 5 L 3 5 L 3 3 </span></span><br><span class="line"><span class="undefined">                        L 5 3 L 5 2 L 3 2 L 3 0 L 2 0 L 2 2 Z"/&gt;</span></span><br><span class="line"><span class="xml">          <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;<span class="name">ControlTemplate.Triggers</span>&gt;</span></span></span><br><span class="line"><span class="xml">          <span class="tag">&lt;<span class="name">Trigger</span> <span class="attr">Property</span>=<span class="string">"IsChecked"</span></span></span></span><br><span class="line"><span class="undefined">                   Value="True"&gt;</span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;<span class="name">Setter</span> <span class="attr">Property</span>=<span class="string">"Data"</span></span></span></span><br><span class="line"><span class="undefined">                    TargetName="ExpandPath"</span></span><br><span class="line"><span class="undefined">                    Value="M 0 2 L 0 3 L 5 3 L 5 2 Z"/&gt;</span></span><br><span class="line"><span class="xml">          <span class="tag">&lt;/<span class="name">Trigger</span>&gt;</span></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;/<span class="name">ControlTemplate.Triggers</span>&gt;</span></span></span><br><span class="line"><span class="xml">      <span class="tag">&lt;/<span class="name">ControlTemplate</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;/<span class="name">Setter.Value</span>&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;/<span class="name">Setter</span>&gt;</span></span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">Style</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
       
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/02/Makefile/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="liyt">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="学园">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/02/Makefile/" itemprop="url">学习笔记：Makefile</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-02T11:25:37+08:00">
-                2018-02-02
-              </time>
+              <a href="/2018/02/02/TreeListView/" rel="next" title="WPF中TreeListView控件的实现">
+                <i class="fa fa-chevron-left"></i> WPF中TreeListView控件的实现
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-              <span class="post-meta-divider">|</span>
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于&#58;</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2018-02-02T11:25:37+08:00">
-                2018-02-02
-              </time>
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Notes/" itemprop="url" rel="index">
-                    <span itemprop="name">学习笔记</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h1 id="Makefile"><a href="#Makefile" class="headerlink" title="Makefile"></a>Makefile</h1><h2 id="执行顺序"><a href="#执行顺序" class="headerlink" title="执行顺序"></a>执行顺序</h2><p>make的执行顺序不同于shell script的从上到下，而是先读取所有makefile建立依赖关系，然后根据依赖关系重建目标。比如<br><figure class="highlight makefile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">MSG=<span class="string">"HELLO WORLD"</span></span><br><span class="line"></span><br><span class="line"><span class="section">all:</span></span><br><span class="line">    @echo <span class="variable">$(MSG)</span></span><br><span class="line"></span><br><span class="line">MSG=<span class="string">"AFTER ALL"</span></span><br></pre></td></tr></table></figure></p>
-<p>执行make的结果为<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">AFTER ALL</span><br></pre></td></tr></table></figure></p>
-<p>因为在执行构建<code>all</code>前，变量<code>MSG</code>已经是”AFTER ALL”。  </p>
-<h2 id="赋值"><a href="#赋值" class="headerlink" title="赋值"></a>赋值</h2><p><code>=</code>会将整个makefile展开后再决定变量的值。比如<br><figure class="highlight makefile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">MSG=<span class="string">"BEFORE"</span>  </span><br><span class="line">MSG2=<span class="variable">$(MSG)</span>  </span><br><span class="line">MSG=<span class="string">"AFTER"</span></span><br></pre></td></tr></table></figure></p>
-<p>变量<code>MSG2</code>的值为”AFTER”。  </p>
-<p><code>:=</code>会取决于变量在makefile中的位置，而不是makefile展开后的值。<br><figure class="highlight makefile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">MSG=<span class="string">"BEFORE"</span>  </span><br><span class="line">MSG2:=<span class="variable">$(MSG)</span>  </span><br><span class="line">MSG=<span class="string">"AFTER"</span></span><br></pre></td></tr></table></figure></p>
-<p>变量<code>MSG2</code>的值为”BEFORE”。  </p>
-<h2 id="特殊符号"><a href="#特殊符号" class="headerlink" title="特殊符号"></a>特殊符号</h2><p><code>$@</code>表示目标名称<br><code>$^</code>表示所有依赖文件<br><code>$&lt;</code>表示第一个依赖文件</p>
-<h2 id="编译目标文件到指定目录"><a href="#编译目标文件到指定目录" class="headerlink" title="编译目标文件到指定目录"></a>编译目标文件到指定目录</h2><figure class="highlight makefile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ifeq</span> (<span class="variable">$(OUT_DIR)</span>,)</span><br><span class="line">OUT_DIR = .</span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line">SRCS=<span class="variable">$(<span class="built_in">wildcard</span> *.c)</span></span><br><span class="line">OBJS=<span class="variable">$(<span class="built_in">patsubst</span> %.c,<span class="variable">$(OUT_DIR)</span>/%.o,<span class="variable">$(SRCS)</span>)</span></span><br><span class="line">CFLAGS=-Wall</span><br><span class="line"></span><br><span class="line"><span class="section">all: <span class="variable">$(OBJS)</span></span></span><br><span class="line">    @echo <span class="string">"  LINK    <span class="variable">$@</span>"</span></span><br><span class="line">    @cc -o <span class="variable">$(OUT_DIR)</span>/<span class="variable">$@</span> <span class="variable">$^</span> <span class="variable">$(CFLAGS)</span> </span><br><span class="line"></span><br><span class="line"><span class="variable">$(OUT_DIR)</span>/%.o: %.c </span><br><span class="line">    @mkdir -p <span class="variable">$(OUT_DIR)</span></span><br><span class="line">    @echo <span class="string">"  CC      <span class="variable">$@</span>"</span></span><br><span class="line">    @cc -c <span class="variable">$&lt;</span> -o <span class="variable">$@</span></span><br></pre></td></tr></table></figure>
-<p><code>OUT_DIR</code>为目标文件目录，默认为当前目录。<br><code>SRCS</code>为当前目录下所有源文件。<br><code>OBJS</code>为所有源文件对应的目标文件，文件名从替换源文件的<code>.c</code>为<code>.o</code>得到。这里用到了<code>patsubst</code>函数，把<code>$(SRCS)</code>中的<code>%.c</code>替换成<code>$(OUT_DIR)/%.o</code>。<br><code>cc -c $&lt; -o $@</code>通过<code>-o</code>选项指定object文件的路径。  </p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -775,10 +473,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -786,6 +485,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -806,8 +509,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -883,6 +595,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#RTC时钟校准"><span class="nav-number">1.</span> <span class="nav-text">RTC时钟校准</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#时钟测量"><span class="nav-number">1.1.</span> <span class="nav-text">时钟测量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#RTC配置"><span class="nav-number">1.2.</span> <span class="nav-text">RTC配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#工作模式"><span class="nav-number">1.2.1.</span> <span class="nav-text">工作模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#校正值计算"><span class="nav-number">1.2.2.</span> <span class="nav-text">校正值计算</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#计算公式"><span class="nav-number">1.2.3.</span> <span class="nav-text">计算公式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#校正流程"><span class="nav-number">1.3.</span> <span class="nav-text">校正流程</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1010,6 +738,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
