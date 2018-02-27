@@ -88,11 +88,11 @@
 <meta name="keywords" content="makefile">
 <meta property="og:type" content="article">
 <meta property="og:title" content="学习笔记：Makefile">
-<meta property="og:url" content="http://yoursite.com/2018/02/02/Makefile/index.html">
+<meta property="og:url" content="http://yoursite.com/2018/02/27/unix_makefile/index.html">
 <meta property="og:site_name" content="学园">
 <meta property="og:description" content="Makefile执行顺序make的执行顺序不同于shell script的从上到下，而是先读取所有makefile建立依赖关系，然后根据依赖关系重建目标。比如123456MSG=&quot;HELLO WORLD&quot;all:    @echo $(MSG)MSG=&quot;AFTER ALL&quot; 执行make的结果为1AFTER ALL 因为在执行构建all前，变量MSG已经是”AFTER ALL”。   赋值=会将整">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-02T03:25:37.382Z">
+<meta property="og:updated_time" content="2018-02-27T10:28:22.817Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="学习笔记：Makefile">
 <meta name="twitter:description" content="Makefile执行顺序make的执行顺序不同于shell script的从上到下，而是先读取所有makefile建立依赖关系，然后根据依赖关系重建目标。比如123456MSG=&quot;HELLO WORLD&quot;all:    @echo $(MSG)MSG=&quot;AFTER ALL&quot; 执行make的结果为1AFTER ALL 因为在执行构建all前，变量MSG已经是”AFTER ALL”。   赋值=会将整">
@@ -125,7 +125,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/02/02/Makefile/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/02/27/unix_makefile/"/>
 
 
 
@@ -258,7 +258,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/02/Makefile/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/27/unix_makefile/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="liyt">
@@ -287,8 +287,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-02T11:25:37+08:00">
-                2018-02-02
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-27T17:38:00+08:00">
+                2018-02-27
               </time>
             
 
@@ -303,8 +303,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-02-02T11:25:37+08:00">
-                2018-02-02
+              <time title="更新于" itemprop="dateModified" datetime="2018-02-27T18:28:22+08:00">
+                2018-02-27
               </time>
             
           </span>
@@ -322,8 +322,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Notes/" itemprop="url" rel="index">
-                    <span itemprop="name">学习笔记</span>
+                  <a href="/categories/unix/" itemprop="url" rel="index">
+                    <span itemprop="name">unix</span>
                   </a>
                 </span>
 
@@ -399,15 +399,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/02/27/unix_socket/" rel="next" title="Socket连接数问题">
+                <i class="fa fa-chevron-left"></i> Socket连接数问题
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/02/02/TreeListView/" rel="prev" title="WPF中TreeListView控件的实现">
-                WPF中TreeListView控件的实现 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -484,7 +484,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -495,7 +495,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -506,7 +506,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>

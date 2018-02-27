@@ -73,7 +73,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="socket,TCP/IP,unix," />
 
 
 
@@ -84,13 +84,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="学园">
-<meta property="og:url" content="http://yoursite.com/tags/TreeListView/index.html">
+<meta name="description" content="Socket连接数问题终于理清楚了Socket连接数与端口号的问题，特此记录，以后不要再犯浑。   先说结论：    一个socket连接由客户端IP，客户端PORT，服务端IP，服务端PORT和协议版本5各参数决定，任意参数不同就不是同一个连接。   一个端口只能被一个socket监听；  下面针对我的愚蠢问题做说明。   Q1. Socket连接数是不是受到端口数（最大65536）限制？对于S">
+<meta name="keywords" content="socket,TCP&#x2F;IP,unix">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Socket连接数问题">
+<meta property="og:url" content="http://yoursite.com/2018/02/27/unix_socket/index.html">
 <meta property="og:site_name" content="学园">
+<meta property="og:description" content="Socket连接数问题终于理清楚了Socket连接数与端口号的问题，特此记录，以后不要再犯浑。   先说结论：    一个socket连接由客户端IP，客户端PORT，服务端IP，服务端PORT和协议版本5各参数决定，任意参数不同就不是同一个连接。   一个端口只能被一个socket监听；  下面针对我的愚蠢问题做说明。   Q1. Socket连接数是不是受到端口数（最大65536）限制？对于S">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-02-27T07:27:00.758Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="学园">
+<meta name="twitter:title" content="Socket连接数问题">
+<meta name="twitter:description" content="Socket连接数问题终于理清楚了Socket连接数与端口号的问题，特此记录，以后不要再犯浑。   先说结论：    一个socket连接由客户端IP，客户端PORT，服务端IP，服务端PORT和协议版本5各参数决定，任意参数不同就不是同一个连接。   一个端口只能被一个socket监听；  下面针对我的愚蠢问题做说明。   Q1. Socket连接数是不是受到端口数（最大65536）限制？对于S">
 
 
 
@@ -120,13 +125,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/TreeListView/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/02/27/unix_socket/"/>
 
 
 
 
 
-  <title>标签: TreeListView | 学园</title>
+  <title>Socket连接数问题 | 学园</title>
   
 
 
@@ -145,7 +150,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -239,54 +244,197 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>TreeListView<small>标签</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/27/unix_socket/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="liyt">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="学园">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/02/02/wpf_treelistview/" itemprop="url">
-              
-                <span itemprop="name">WPF中TreeListView控件的实现</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">Socket连接数问题</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-02-02T17:08:32+08:00"
-              content="2018-02-02" >
-          02-02
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-27T15:04:33+08:00">
+                2018-02-27
+              </time>
+            
 
-    </header>
-  </article>
+            
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2018-02-27T15:27:00+08:00">
+                2018-02-27
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/unix/" itemprop="url" rel="index">
+                    <span itemprop="name">unix</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="Socket连接数问题"><a href="#Socket连接数问题" class="headerlink" title="Socket连接数问题"></a>Socket连接数问题</h1><p>终于理清楚了Socket连接数与端口号的问题，特此记录，以后不要再犯浑。  </p>
+<p>先说<strong>结论</strong>：  </p>
+<ol>
+<li>一个socket连接由客户端IP，客户端PORT，服务端IP，服务端PORT和协议版本5各参数决定，任意参数不同就不是同一个连接。  </li>
+<li>一个端口只能被一个socket监听；</li>
+</ol>
+<p>下面针对我的愚蠢问题做说明。  </p>
+<p>Q1. Socket连接数是不是受到端口数（最大65536）限制？<br>对于Server来说，创建socket对象，绑定<strong>一个</strong>端口，开始监听，等待客户端连接。看到加粗部分了吗，一个socket对象总是监听一个端口，无论后面接受多少个连接，监听的端口都不变，变的是客户端的IP和端口。所以实际可以接受的连接数仅仅受到客户端IP和客户端端口的限制（忽略系统资源等限制），考虑到IP地址的数量级，这个连接数可以是非常大的。  </p>
+<p>Q2. 一个端口只能被一个socket监听，那多个浏览器是怎么同时使用80端口的？<br>这里又犯了个很明显的错误，一个端口只能被一个socket监听是对于服务端而言的，而浏览器作为客户端其源端口号是动态分配的，只有远程端口才是80，所以不存在冲突问题。只有当两个服务器程序需要同时监听80端口时才会出现冲突。  </p>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/socket/" rel="tag"># socket</a>
+          
+            <a href="/tags/TCP-IP/" rel="tag"># TCP/IP</a>
+          
+            <a href="/tags/unix/" rel="tag"># unix</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/02/26/uds_doip/" rel="next" title="DiagnosticOverIP 介绍">
+                <i class="fa fa-chevron-left"></i> DiagnosticOverIP 介绍
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/02/27/unix_makefile/" rel="prev" title="学习笔记：Makefile">
+                学习笔记：Makefile <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -294,6 +442,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -314,8 +466,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -391,6 +552,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Socket连接数问题"><span class="nav-number">1.</span> <span class="nav-text">Socket连接数问题</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -518,6 +695,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 

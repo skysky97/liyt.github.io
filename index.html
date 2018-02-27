@@ -254,7 +254,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/07/RtcCorrection/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/27/unix_makefile/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="liyt">
@@ -273,7 +273,660 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/02/07/RtcCorrection/" itemprop="url">RH850内部RTC校准</a></h1>
+                <a class="post-title-link" href="/2018/02/27/unix_makefile/" itemprop="url">学习笔记：Makefile</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-27T17:38:00+08:00">
+                2018-02-27
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2018-02-27T18:28:22+08:00">
+                2018-02-27
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/unix/" itemprop="url" rel="index">
+                    <span itemprop="name">unix</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          Makefile执行顺序make的执行顺序不同于shell script的从上到下，而是先读取所有makefile建立依赖关系，然后根据依赖关系重建目标。比如123456MSG="HELLO WORLD"all:    @echo $(MSG)MSG="AFTER ALL"
+执行make的结果为1A
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/02/27/unix_makefile/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/27/unix_socket/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="liyt">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="学园">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/02/27/unix_socket/" itemprop="url">Socket连接数问题</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-27T15:04:33+08:00">
+                2018-02-27
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2018-02-27T15:27:00+08:00">
+                2018-02-27
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/unix/" itemprop="url" rel="index">
+                    <span itemprop="name">unix</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          Socket连接数问题终于理清楚了Socket连接数与端口号的问题，特此记录，以后不要再犯浑。  
+先说结论：  
+
+一个socket连接由客户端IP，客户端PORT，服务端IP，服务端PORT和协议版本5各参数决定，任意参数不同就不是同一个连接。  
+一个端口只能被一个socket监听；
+
+下面针
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/02/27/unix_socket/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/26/uds_doip/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="liyt">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="学园">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/02/26/uds_doip/" itemprop="url">DiagnosticOverIP 介绍</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-26T10:05:20+08:00">
+                2018-02-26
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2018-02-27T14:40:43+08:00">
+                2018-02-27
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/UDS/" itemprop="url" rel="index">
+                    <span itemprop="name">UDS</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          介绍使用场景
+车辆的检查和维修。  
+车辆/ECU的软件更新。  
+车辆/ECU下线检测和维修。  
+
+术语DoIP edge nodeDoIP边缘节点，是车内网络连接到诊断口的第一个节点，连接Ethernet Activation Line。
+DoIP entityDoIP实体，包括DoIP节点和
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/02/26/uds_doip/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/25/wpf_mvvmlight/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="liyt">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="学园">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/02/25/wpf_mvvmlight/" itemprop="url">WPF MvvmLight安装使用</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-25T10:17:27+08:00">
+                2018-02-25
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2018-02-27T17:40:13+08:00">
+                2018-02-27
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/WPF/" itemprop="url" rel="index">
+                    <span itemprop="name">WPF</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          安装NuGet搜索MvvmLight，会搜到两个包，MvvmLight和MvvmLightLibs。前者会创建额外的解决方案结构文件，我们选择前者安装。备注：在使用过程中发现自动安装的CommonServiceLocator包为v2.0.2版本，此版本疑似不包含Microsoft.Practices
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/02/25/wpf_mvvmlight/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/07/embeded_rh850_rtccorrection/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="liyt">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="学园">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/02/07/embeded_rh850_rtccorrection/" itemprop="url">RH850内部RTC校准</a></h1>
         
 
         <div class="post-meta">
@@ -301,8 +954,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-02-08T17:42:47+08:00">
-                2018-02-08
+              <time title="更新于" itemprop="dateModified" datetime="2018-02-27T17:38:37+08:00">
+                2018-02-27
               </time>
             
           </span>
@@ -320,8 +973,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Notes/" itemprop="url" rel="index">
-                    <span itemprop="name">学习笔记</span>
+                  <a href="/categories/Embeded/" itemprop="url" rel="index">
+                    <span itemprop="name">Embeded</span>
                   </a>
                 </span>
 
@@ -359,66 +1012,16 @@
       
         
           
-            <h1 id="RTC时钟校准"><a href="#RTC时钟校准" class="headerlink" title="RTC时钟校准"></a>RTC时钟校准</h1><p>RH850内部RTCA模块使用32.768KHz的subClock作为时钟源。时钟源的偏差将导致计时出现偏差，所以需要检测时钟源的实际频率，然后做出相应的补偿，以达到计时精度要求。  </p>
-<h2 id="时钟测量"><a href="#时钟测量" class="headerlink" title="时钟测量"></a>时钟测量</h2><p>配置Clock模块可以直接从<code>JP0_3(CSCXFOUT)</code>引脚输出时钟，要输出的时钟类型通过<code>CKSC_AFOUTS_CTL</code>寄存器选择<code>SubSoc</code>，然后通过<code>SYSFOUTDIV</code>使能输出和设置输出的分频比。通过频率计直接测量输出的频率。  </p>
-<h2 id="RTC配置"><a href="#RTC配置" class="headerlink" title="RTC配置"></a>RTC配置</h2><h3 id="工作模式"><a href="#工作模式" class="headerlink" title="工作模式"></a>工作模式</h3><p>RTC模块有两种工作模式：  </p>
-<ul>
-<li>32.768-kHz模式，时钟固定为32.768kHz，计数器从0记到32767为1s。</li>
-<li>指定频率模式，时钟可以不使用32.768kHz，需要手动设定计数器的翻转值。       </li>
-</ul>
-<p>使用RTC模块内部的校准功能需要配置成32.768-kHz模式。这种模式下有两种校准方式可以选择：  </p>
-<ul>
-<li>每20s补偿特定值, 可以校准的频率范围为32.76180000 to 32.77420000 kHz。</li>
-<li>每60s补偿特定值, 可以校准的频率范围为32.76593333 to 32.77006667 kHz<br>后者支持的频率范围小，但是可校准精度是前者的3倍。</li>
-</ul>
-<h3 id="校正值计算"><a href="#校正值计算" class="headerlink" title="校正值计算"></a>校正值计算</h3><p>RTC校正的根本原理是每一定周期增加或减少1S的计数值。频率偏高，计时偏快时，增加计数值，拉长1S的时间；频率偏低，计时偏慢时，减少计数值，缩短1S的时间。<br><code>RTCAnSUBU</code>寄存器用于控制校正功能。其中</p>
-<ul>
-<li><code>RTCAnDEV</code>“0”表示每20s校正一次, “1”表示每60s校正一次。</li>
-<li><code>RTCAnF6</code>“0”表示增加, “1”表示减少。</li>
-<li><code>RTCAnF[5:0]</code>设置增加或减少的值。<br>增加时，校正值等于(<code>RTCAnF[5:0]</code>减1)乘2，减少时，校正值等于(<code>RTCAnF[5:0]</code><strong>取反</strong>加1)乘2。</li>
-</ul>
-<p>以<strong>32.7681kHz</strong>为例：<br>时钟周期 T = 1/32768.1, 运行60S的时钟周期数 n = 60 x 32768, 实际时间 t = T x n = (60 x 32768) / 32768.1 = 59.9998169s, 也就是RTC时间快了0.000183105s，因此需要在60s后增加6（0.000183105 x 32768.1）个周期。  </p>
-<p>以<strong>32.7679kHz</strong>为例：<br>时钟运行1分钟的实际时间 t = （60 x 32768) / 32767.9 = 60.00018311s，RTC时间慢了0.00018311s，因此需要在60s后减少6（0.00018311 x 32767.9）个周期。因为是减少，减少值取反加1再乘2为6，寄存器值应该为<strong>111101</strong>。   </p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">SubSoc</th>
-<th style="text-align:left">RTCAnDEV</th>
-<th style="text-align:left">RTCAnF6</th>
-<th style="text-align:left">RTCAnF[5:0]</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">32768.1</td>
-<td style="text-align:left">1</td>
-<td style="text-align:left">0</td>
-<td style="text-align:left">000100</td>
-</tr>
-<tr>
-<td style="text-align:left">32767.9</td>
-<td style="text-align:left">1</td>
-<td style="text-align:left">1</td>
-<td style="text-align:left">111101</td>
-</tr>
-</tbody>
-</table>
-<h3 id="计算公式"><a href="#计算公式" class="headerlink" title="计算公式"></a>计算公式</h3><p>实际时钟f，当f=[32765.93333, 32770.06667]，每60s校正一次，校正值<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">n = (60 - ((60 x 32768) / f)) x f = 60 x (f - 32768)  </span><br><span class="line">RTCAnSUBU.RTCAnDEV = 1</span><br></pre></td></tr></table></figure></p>
-<p>当f=[32761.80000, 32765.93333)或f=(32770.06667, 32774.20000]时，每20s校正一次，校正值<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">n = 20 x (f - 32768)</span><br><span class="line">RTCAnSUBU.RTCAnDEV = 0</span><br></pre></td></tr></table></figure></p>
-<p>如果n&gt;0，则<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">RTCAnSUBU.RTCAnF6 = 0</span><br><span class="line">RTCAnSUBU.RTCAnF[5:0] = ((uint8)n / 2) + 1</span><br></pre></td></tr></table></figure></p>
-<p>否则<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">RTCAnSUBU.RTCAnF6 = 1</span><br><span class="line">RTCAnSUBU.RTCAnF[5:0] = ((uint8)n / 2)</span><br></pre></td></tr></table></figure></p>
-<p><strong>最终得到RTCAnSUBU的值作为校正数据写入NVM。</strong><br>校正值RTCAnF[5:0]共6位，最多可校正值为±124，根据上面的公式，60s校正一次时，f = 32768 + (n / 60), f可校正偏差±2.0667Hz。20s校正一次时，f = 32768 + (n / 20), f可校正偏差±6.2Hz。  </p>
-<p><strong>计算代码示例</strong><br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"stdlib.h"</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"stdio.h"</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">signed</span> <span class="keyword">int</span> int32;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">unsigned</span> <span class="keyword">int</span> uint32;</span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">unsigned</span> <span class="keyword">char</span> uint8;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> RTC_FREQ 327680000</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> RTC_CORRECT_MAX 124</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> RTC_CORRECT_MIN -124 </span></span><br><span class="line"></span><br><span class="line"><span class="function">uint8 <span class="title">get_correct_value</span><span class="params">(int32 freq)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    int32 correct_value;</span><br><span class="line">    uint8 correct_type = <span class="number">0</span>;</span><br><span class="line">    uint8 result;</span><br><span class="line"></span><br><span class="line">    correct_value = (<span class="number">60</span> * (freq - RTC_FREQ) + <span class="number">5000</span>) / <span class="number">10000</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> ((correct_value &gt; RTC_CORRECT_MAX) || (correct_value &lt; RTC_CORRECT_MIN))</span><br><span class="line">    &#123;   </span><br><span class="line">        correct_type  = <span class="number">0x80</span>;</span><br><span class="line">        correct_value = (<span class="number">20</span> * (freq - RTC_FREQ) + <span class="number">5000</span>) / <span class="number">10000</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (correct_value &gt; RTC_CORRECT_MAX) </span><br><span class="line">        &#123;   </span><br><span class="line">            correct_value = RTC_CORRECT_MAX;</span><br><span class="line">        &#125;   </span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> (correct_value &lt; RTC_CORRECT_MIN)</span><br><span class="line">        &#123;   </span><br><span class="line">            correct_value = RTC_CORRECT_MIN;</span><br><span class="line">        &#125;   </span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;   </span><br><span class="line">        &#125;   </span><br><span class="line">    &#125;   </span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (correct_value &gt; <span class="number">0</span>)</span><br><span class="line">    &#123;   </span><br><span class="line">        result = (uint8)correct_value / <span class="number">2</span> + <span class="number">1</span>;  </span><br><span class="line">        result |= correct_type;</span><br><span class="line">    &#125;   </span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        result = (uint8)correct_value / <span class="number">2</span>;</span><br><span class="line">        result |= correct_type;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    uint8 i;</span><br><span class="line">    uint8 value;</span><br><span class="line">    int32 freqs[] =</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">// 20s decrease test</span></span><br><span class="line">        <span class="number">327618000</span>, <span class="number">327619000</span>, <span class="number">327620000</span>, <span class="number">327657000</span>, <span class="number">327658000</span>, <span class="number">327659000</span>,</span><br><span class="line">        <span class="comment">// 60s decrease test</span></span><br><span class="line">        <span class="number">327659333</span>, <span class="number">327659667</span>, <span class="number">327660000</span>, <span class="number">327679000</span>, <span class="number">327679333</span>, <span class="number">327679667</span>,</span><br><span class="line">        <span class="comment">// 60s increase test</span></span><br><span class="line">        <span class="number">327680333</span>, <span class="number">327680667</span>, <span class="number">327681000</span>, <span class="number">327700000</span>, <span class="number">327700333</span>, <span class="number">327700667</span>,</span><br><span class="line">        <span class="comment">// 20s increase test </span></span><br><span class="line">        <span class="number">327701000</span>, <span class="number">327702000</span>, <span class="number">327703000</span>, <span class="number">327740000</span>, <span class="number">327741000</span>, <span class="number">327742000</span>,</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"freq\t\tRTCAnDEV\tRTCAnF6\tRTCAnF[5:0]\n"</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"--------------------------------------------------\n"</span>);</span><br><span class="line">    <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; <span class="number">24</span>; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        value = get_correct_value(freqs[i]);</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%d\t%d\t\t%d\t%d%d%d%d%d%d\n"</span>, freqs[i], (value&gt;&gt;<span class="number">7</span>)&amp;<span class="number">0x01</span>, (value&gt;&gt;<span class="number">6</span>)&amp;<span class="number">0x01</span>,</span><br><span class="line">                (value&gt;&gt;<span class="number">5</span>)&amp;<span class="number">0x01</span>, (value&gt;&gt;<span class="number">4</span>)&amp;<span class="number">0x01</span>, (value&gt;&gt;<span class="number">3</span>)&amp;<span class="number">0x01</span>, (value&gt;&gt;<span class="number">2</span>)&amp;<span class="number">0x01</span>,</span><br><span class="line">			    (value&gt;&gt;<span class="number">1</span>)&amp;<span class="number">0x01</span>, (value&gt;&gt;<span class="number">0</span>)&amp;<span class="number">0x01</span> );</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>代码运行结果如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">freq		RTCAnDEV	RTCAnF6	RTCAnF[5:0]</span><br><span class="line">--------------------------------------------------</span><br><span class="line">32761.8000	1		1	000010</span><br><span class="line">32761.9000	1		1	000011</span><br><span class="line">32762.0000	1		1	000100</span><br><span class="line">32765.7000	1		1	101001</span><br><span class="line">32765.8000	1		1	101010</span><br><span class="line">32765.9000	1		1	101011</span><br><span class="line">32765.9333	0		1	000010</span><br><span class="line">32765.9667	0		1	000011</span><br><span class="line">32766.0000	0		1	000100</span><br><span class="line">32767.9000	0		1	111101</span><br><span class="line">32767.9333	0		1	111110</span><br><span class="line">32767.9667	0		1	111111</span><br><span class="line">32768.0333	0		0	000010</span><br><span class="line">32768.0667	0		0	000011</span><br><span class="line">32768.1000	0		0	000100</span><br><span class="line">32770.0000	0		0	111101</span><br><span class="line">32770.0333	0		0	111110</span><br><span class="line">32770.0667	0		0	111111</span><br><span class="line">32770.1000	1		0	010110</span><br><span class="line">32770.2000	1		0	010111</span><br><span class="line">32770.3000	1		0	011000</span><br><span class="line">32774.0000	1		0	111101</span><br><span class="line">32774.1000	1		0	111110</span><br><span class="line">32774.2000	1		0	111111</span><br></pre></td></tr></table></figure></p>
-<h2 id="校正流程"><a href="#校正流程" class="headerlink" title="校正流程"></a>校正流程</h2><ol>
-<li>发送EOL指令，使产品进入RTC校准模式，开启时钟输出功能。</li>
-<li>通过频率计测量32.768kHz晶振的实际频率。如果频率超过可校准范围[32765.93333, 32770.06667]，报不合格。</li>
-<li>跟据实际频率计算校正值。</li>
-<li>将校正值写入EEPROM。</li>
-<li>退出RTC校准模式。</li>
-</ol>
-
-          
+          RTC时钟校准RH850内部RTCA模块使用32.768KHz的subClock作为时钟源。时钟源的偏差将导致计时出现偏差，所以需要检测时钟源的实际频率，然后做出相应的补偿，以达到计时精度要求。  
+时钟测量配置Clock模块可以直接从JP0_3(CSCXFOUT)引脚输出时钟，要输出的时钟类型通过
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/02/07/embeded_rh850_rtccorrection/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -465,7 +1068,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/02/TreeListView/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/02/wpf_treelistview/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="liyt">
@@ -484,7 +1087,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/02/02/TreeListView/" itemprop="url">WPF中TreeListView控件的实现</a></h1>
+                <a class="post-title-link" href="/2018/02/02/wpf_treelistview/" itemprop="url">WPF中TreeListView控件的实现</a></h1>
         
 
         <div class="post-meta">
@@ -512,8 +1115,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-02-05T16:01:18+08:00">
-                2018-02-05
+              <time title="更新于" itemprop="dateModified" datetime="2018-02-27T17:40:25+08:00">
+                2018-02-27
               </time>
             
           </span>
@@ -531,8 +1134,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/C/" itemprop="url" rel="index">
-                    <span itemprop="name">C#</span>
+                  <a href="/categories/WPF/" itemprop="url" rel="index">
+                    <span itemprop="name">WPF</span>
                   </a>
                 </span>
 
@@ -570,179 +1173,22 @@
       
         
           
-            <h1 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h1><p>WPF中没有原生的TreeListView控件，本文根据MSN上的<a href="http://files.cnblogs.com/browser-yy/TreeListView.zip" target="_blank" rel="noopener">示例代码</a>来分析其实现方法。最终实现的效果图如下：<br><img src="http://liyunting-blog.oss-cn-hangzhou.aliyuncs.com/TreeListView/overview.png?Expires=1517821154&amp;OSSAccessKeyId=TMP.AQF68TJC4Ide1tJPA3AcCyX2OB4Wl804BxRGOMmj7ncAkWG3yTOzjh1rlXCKAAAwLAIUWEKetKGPUQK53jKSnv-LazIbzq0CFCCiK9ojTAVaqu-TgRf5ZPnpk3RY&amp;Signature=84DTld5suSKIPvw1fCxWIcBj6S4%3D" alt="overview"></p>
-<h1 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h1><p>整个TreeListView主要包括以下几个部分：</p>
-<ul>
-<li>折叠按钮，根据折叠展开状态变换显示效果，没有展开内容时隐藏。</li>
-<li>每个单元格。</li>
-<li>整个控件。</li>
-</ul>
-<h2 id="折叠按钮"><a href="#折叠按钮" class="headerlink" title="折叠按钮"></a>折叠按钮</h2><p>折叠按钮使用ToggleButton控件来实现，这里通过ControlTemplate设置ToggleButton的模板。<br>首先创建外层的Border确定折叠按钮的边界，然后创建内层Border绘制折叠展开符号，示例中折叠状态下显示为方框中间一个＋号。<br>将Button的<code>IsChecked</code>属性当作触发器，来改变内层Border的背景，实现折叠展开翻转效果。<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Style</span> <span class="attr">x:Key</span>=<span class="string">"ExpandCollapseToggleStyle"</span></span></span><br><span class="line"><span class="tag">       <span class="attr">TargetType</span>=<span class="string">"&#123;x:Type ToggleButton&#125;"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;<span class="name">Setter</span> <span class="attr">Property</span>=<span class="string">"Focusable"</span></span></span></span><br><span class="line"><span class="undefined">          Value="False"/&gt;</span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;<span class="name">Setter</span> <span class="attr">Property</span>=<span class="string">"Width"</span></span></span></span><br><span class="line"><span class="undefined">          Value="19"/&gt;</span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;<span class="name">Setter</span> <span class="attr">Property</span>=<span class="string">"Height"</span></span></span></span><br><span class="line"><span class="undefined">          Value="13"/&gt;</span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;<span class="name">Setter</span> <span class="attr">Property</span>=<span class="string">"Template"</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">Setter.Value</span>&gt;</span></span></span><br><span class="line"><span class="xml">      <span class="tag">&lt;<span class="name">ControlTemplate</span> <span class="attr">TargetType</span>=<span class="string">"&#123;x:Type ToggleButton&#125;"</span>&gt;</span> <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Width</span>=<span class="string">"19"</span></span></span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">                Height="13"</span></span><br><span class="line"><span class="undefined">                Background="Transparent"&gt;</span></span><br><span class="line"><span class="xml">          <span class="tag">&lt;<span class="name">Border</span> <span class="attr">Width</span>=<span class="string">"9"</span></span></span></span><br><span class="line"><span class="undefined">                  Height="9"</span></span><br><span class="line"><span class="undefined">                  BorderThickness="1"</span></span><br><span class="line"><span class="undefined">                  BorderBrush="#FF7898B5"</span></span><br><span class="line"><span class="undefined">                  CornerRadius="1"</span></span><br><span class="line"><span class="undefined">                  SnapsToDevicePixels="true"&gt;</span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;<span class="name">Border.Background</span>&gt;</span></span></span><br><span class="line"><span class="xml">              <span class="tag">&lt;<span class="name">LinearGradientBrush</span> <span class="attr">StartPoint</span>=<span class="string">"0,0"</span></span></span></span><br><span class="line"><span class="undefined">                                   EndPoint="1,1"&gt;</span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;<span class="name">LinearGradientBrush.GradientStops</span>&gt;</span></span></span><br><span class="line"><span class="xml">                  <span class="tag">&lt;<span class="name">GradientStop</span> <span class="attr">Color</span>=<span class="string">"White"</span></span></span></span><br><span class="line"><span class="undefined">                                Offset=".2"/&gt;</span></span><br><span class="line"><span class="xml">                  <span class="tag">&lt;<span class="name">GradientStop</span> <span class="attr">Color</span>=<span class="string">"#FFC0B7A6"</span></span></span></span><br><span class="line"><span class="undefined">                                Offset="1"/&gt;</span></span><br><span class="line"><span class="xml">                <span class="tag">&lt;/<span class="name">LinearGradientBrush.GradientStops</span>&gt;</span></span></span><br><span class="line"><span class="xml">              <span class="tag">&lt;/<span class="name">LinearGradientBrush</span>&gt;</span></span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;/<span class="name">Border.Background</span>&gt;</span></span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;<span class="name">Path</span> <span class="attr">x:Name</span>=<span class="string">"ExpandPath"</span></span></span></span><br><span class="line"><span class="undefined">                  Margin="1,1,1,1"</span></span><br><span class="line"><span class="undefined">                  Fill="Black"</span></span><br><span class="line"><span class="undefined">                  Data="M 0 2 L 0 3 L 2 3 L 2 5 L 3 5 L 3 3 </span></span><br><span class="line"><span class="undefined">                        L 5 3 L 5 2 L 3 2 L 3 0 L 2 0 L 2 2 Z"/&gt;</span></span><br><span class="line"><span class="xml">          <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;/<span class="name">Border</span>&gt;</span></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;<span class="name">ControlTemplate.Triggers</span>&gt;</span></span></span><br><span class="line"><span class="xml">          <span class="tag">&lt;<span class="name">Trigger</span> <span class="attr">Property</span>=<span class="string">"IsChecked"</span></span></span></span><br><span class="line"><span class="undefined">                   Value="True"&gt;</span></span><br><span class="line"><span class="xml">            <span class="tag">&lt;<span class="name">Setter</span> <span class="attr">Property</span>=<span class="string">"Data"</span></span></span></span><br><span class="line"><span class="undefined">                    TargetName="ExpandPath"</span></span><br><span class="line"><span class="undefined">                    Value="M 0 2 L 0 3 L 5 3 L 5 2 Z"/&gt;</span></span><br><span class="line"><span class="xml">          <span class="tag">&lt;/<span class="name">Trigger</span>&gt;</span></span></span><br><span class="line"><span class="xml">        <span class="tag">&lt;/<span class="name">ControlTemplate.Triggers</span>&gt;</span></span></span><br><span class="line"><span class="xml">      <span class="tag">&lt;/<span class="name">ControlTemplate</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;/<span class="name">Setter.Value</span>&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;/<span class="name">Setter</span>&gt;</span></span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">Style</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+          说明WPF中没有原生的TreeListView控件，本文根据MSN上的示例代码来分析其实现方法。最终实现的效果图如下：
+实现整个TreeListView主要包括以下几个部分：
 
-          
-        
-      
-    </div>
-    
-    
-    
+折叠按钮，根据折叠展开状态变换显示效果，没有展开内容时隐藏。
+每个单元格。
+整个控件。
 
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/02/Makefile/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="liyt">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="学园">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/02/Makefile/" itemprop="url">学习笔记：Makefile</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-02T11:25:37+08:00">
-                2018-02-02
-              </time>
-            
-
-            
-              <span class="post-meta-divider">|</span>
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于&#58;</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2018-02-02T11:25:37+08:00">
-                2018-02-02
-              </time>
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Notes/" itemprop="url" rel="index">
-                    <span itemprop="name">学习笔记</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Makefile"><a href="#Makefile" class="headerlink" title="Makefile"></a>Makefile</h1><h2 id="执行顺序"><a href="#执行顺序" class="headerlink" title="执行顺序"></a>执行顺序</h2><p>make的执行顺序不同于shell script的从上到下，而是先读取所有makefile建立依赖关系，然后根据依赖关系重建目标。比如<br><figure class="highlight makefile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">MSG=<span class="string">"HELLO WORLD"</span></span><br><span class="line"></span><br><span class="line"><span class="section">all:</span></span><br><span class="line">    @echo <span class="variable">$(MSG)</span></span><br><span class="line"></span><br><span class="line">MSG=<span class="string">"AFTER ALL"</span></span><br></pre></td></tr></table></figure></p>
-<p>执行make的结果为<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">AFTER ALL</span><br></pre></td></tr></table></figure></p>
-<p>因为在执行构建<code>all</code>前，变量<code>MSG</code>已经是”AFTER ALL”。  </p>
-<h2 id="赋值"><a href="#赋值" class="headerlink" title="赋值"></a>赋值</h2><p><code>=</code>会将整个makefile展开后再决定变量的值。比如<br><figure class="highlight makefile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">MSG=<span class="string">"BEFORE"</span>  </span><br><span class="line">MSG2=<span class="variable">$(MSG)</span>  </span><br><span class="line">MSG=<span class="string">"AFTER"</span></span><br></pre></td></tr></table></figure></p>
-<p>变量<code>MSG2</code>的值为”AFTER”。  </p>
-<p><code>:=</code>会取决于变量在makefile中的位置，而不是makefile展开后的值。<br><figure class="highlight makefile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">MSG=<span class="string">"BEFORE"</span>  </span><br><span class="line">MSG2:=<span class="variable">$(MSG)</span>  </span><br><span class="line">MSG=<span class="string">"AFTER"</span></span><br></pre></td></tr></table></figure></p>
-<p>变量<code>MSG2</code>的值为”BEFORE”。  </p>
-<h2 id="特殊符号"><a href="#特殊符号" class="headerlink" title="特殊符号"></a>特殊符号</h2><p><code>$@</code>表示目标名称<br><code>$^</code>表示所有依赖文件<br><code>$&lt;</code>表示第一个依赖文件</p>
-<h2 id="编译目标文件到指定目录"><a href="#编译目标文件到指定目录" class="headerlink" title="编译目标文件到指定目录"></a>编译目标文件到指定目录</h2><figure class="highlight makefile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ifeq</span> (<span class="variable">$(OUT_DIR)</span>,)</span><br><span class="line">OUT_DIR = .</span><br><span class="line"><span class="keyword">endif</span></span><br><span class="line"></span><br><span class="line">SRCS=<span class="variable">$(<span class="built_in">wildcard</span> *.c)</span></span><br><span class="line">OBJS=<span class="variable">$(<span class="built_in">patsubst</span> %.c,<span class="variable">$(OUT_DIR)</span>/%.o,<span class="variable">$(SRCS)</span>)</span></span><br><span class="line">CFLAGS=-Wall</span><br><span class="line"></span><br><span class="line"><span class="section">all: <span class="variable">$(OBJS)</span></span></span><br><span class="line">    @echo <span class="string">"  LINK    <span class="variable">$@</span>"</span></span><br><span class="line">    @cc -o <span class="variable">$(OUT_DIR)</span>/<span class="variable">$@</span> <span class="variable">$^</span> <span class="variable">$(CFLAGS)</span> </span><br><span class="line"></span><br><span class="line"><span class="variable">$(OUT_DIR)</span>/%.o: %.c </span><br><span class="line">    @mkdir -p <span class="variable">$(OUT_DIR)</span></span><br><span class="line">    @echo <span class="string">"  CC      <span class="variable">$@</span>"</span></span><br><span class="line">    @cc -c <span class="variable">$&lt;</span> -o <span class="variable">$@</span></span><br></pre></td></tr></table></figure>
-<p><code>OUT_DIR</code>为目标文件目录，默认为当前目录。<br><code>SRCS</code>为当前目录下所有源文件。<br><code>OBJS</code>为所有源文件对应的目标文件，文件名从替换源文件的<code>.c</code>为<code>.o</code>得到。这里用到了<code>patsubst</code>函数，把<code>$(SRCS)</code>中的<code>%.c</code>替换成<code>$(OUT_DIR)/%.o</code>。<br><code>cc -c $&lt; -o $@</code>通过<code>-o</code>选项指定object文件的路径。  </p>
-
-          
+折叠按钮折叠按钮使用Toggle
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/02/02/wpf_treelistview/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -822,7 +1268,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -833,7 +1279,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -844,7 +1290,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
