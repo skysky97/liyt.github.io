@@ -1,7 +1,9 @@
----
 title: 学习笔记：Makefile
-tags: makefile
-categories: 学习笔记
+tags:
+  - makefile
+categories:
+  - unix
+date: 2018-02-27 17:38:00
 ---
 # Makefile
 ## 执行顺序

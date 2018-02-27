@@ -2,7 +2,7 @@
 title: RH850内部RTC校准
 date: 2018-02-07 19:09:05
 tags: [RTC, RH850]
-categories: 学习笔记
+categories: Embeded
 ---
 # RTC时钟校准
 RH850内部RTCA模块使用32.768KHz的subClock作为时钟源。时钟源的偏差将导致计时出现偏差，所以需要检测时钟源的实际频率，然后做出相应的补偿，以达到计时精度要求。  

@@ -2,7 +2,7 @@
 title: WPF中TreeListView控件的实现
 date: 2018-02-02 17:08:32
 tags: [WPF, TreeListView]
-categories: C#
+categories: WPF
 ---
 # 说明
 WPF中没有原生的TreeListView控件，本文根据MSN上的[示例代码](http://files.cnblogs.com/browser-yy/TreeListView.zip)来分析其实现方法。最终实现的效果图如下：  
